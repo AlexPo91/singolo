@@ -78,3 +78,35 @@ ul, li {
 .nav__list__item:first-child {
     margin-left: 0;
 }
+
+.slider {
+    background-color: #f06c64;
+    padding: 53px 0 64px;
+
+}
+
+.slider__main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider__arrow {
+    width: 16px;
+  height: 27px;
+  border: none;
+  cursor: pointer;
+}
+
+.slider__arrow__left {
+    background: url('./assets/image/prev.png');
+}
+
+.slider__arrow__right {
+    background: url('./assets/image/next.png');
+}
+
+.slider__arrow:hover {
+    opacity: 75%;
+  }
