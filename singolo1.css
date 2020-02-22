@@ -6,13 +6,16 @@
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 ul, li {
     margin: 0;
     padding: 0;
 }
-
+p {
+    margin: 0;
+}
 .wrapper {
     width: 100%;
     max-width: 1020px;
@@ -29,13 +32,15 @@ ul, li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 35px 0;
+    padding: 32px 0;
 }
 
 .header__logo {
     text-transform: uppercase;
     color: #fff;
-    font: 700 25px/25px  'latobold', sans-serif;
+    font: 500 25px/25px 'latobold', sans-serif;
+    letter-spacing: -0.9px;
+    
 }
 
 .logo__star {
@@ -47,31 +52,42 @@ ul, li {
     flex-direction: row;
     list-style: none;
     text-transform: uppercase; 
+    margin: 0 0 0 0;
 }
 
 .nav__list__item {
-    position: relative;
+    
 }
 
 .nav__list__item{
+    position: relative;
     display: flex;
-    font: 700 12px/12px  'latobold', sans-serif;
+    font: 400 12px/12px 'latobold', sans-serif;
+    padding-top: 10PX;
     margin-left: 30px; 
+    letter-spacing: -0.4px;
 }
 
 .nav__list__item a {
     color: #fff;
 }
+.nav__list__item.active a{
+    color: #f06c64; 
+}
 
-.nav__list__item:not(:last-child)::after {
+.nav__list__item a:hover {
+    color: #f06c64;
+}
+
+.nav__list__item:not(:last-child):after {
     content: "";
     display: flex;
     position: absolute;
-    height: 3px;
-    width: 3px;
+    height: 2px;
+    width: 2px;
     background-color: #494e62;
-    left: calc(100% + 15px);
-    top: 50%;
+    left: calc(100% + 14px);
+    top: calc(50% + 5px);
     transform: translateY(-50%); 
 }
 
@@ -81,8 +97,19 @@ ul, li {
 
 .slider {
     background-color: #f06c64;
-    padding: 53px 0 64px;
+    padding: 53px 0 53px;
+    border-bottom: 7px solid #ea676b;
 
+}
+.iphone__vertical {
+    position: relative;
+    right: 5px;
+}
+
+.iphone_horizontal {
+    position: relative;
+    left: 7px;
+    bottom: 1px;
 }
 
 .slider__main {
@@ -101,12 +128,65 @@ ul, li {
 
 .slider__arrow__left {
     background: url('./assets/image/prev.png');
+    position: relative;
+    left: 2px;
+    bottom: 2px;
+
 }
 
 .slider__arrow__right {
     background: url('./assets/image/next.png');
+    position: relative;
+    left: 1px;
+    bottom: 2px;
+
 }
 
 .slider__arrow:hover {
     opacity: 75%;
   }
+
+
+  .services {
+    background-color: #f2f2f2;
+    padding: 67px 0 26px;
+  }
+  .services__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .services__item {
+      width: 33.3%;
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 39px;
+  }
+.services__logo {
+    padding-right: 20px;
+}
+.services__title {
+    color: #666d89;
+    font: 700 30px 'latoblack', sans-serif;
+    padding-bottom: 33px;
+}
+
+.services__text {
+    color: #767e9e;
+    font: 300 18px/30px 'latolight', sans-serif;
+    padding-bottom: 51px;
+}
+
+.services__subtitle {
+    color: #666d89;
+    font: 700 18px 'latoblack', sans-serif;
+}
+
+.services__item_text {
+    color: #767e9e;
+    font: 300 12px 'latoregular', sans-serif;
+}
+
+.services__description {
+    padding-right: 20px;
+}
