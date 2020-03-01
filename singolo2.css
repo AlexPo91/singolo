@@ -24,7 +24,7 @@ a {
 .portfolio__main {
     color: #666d89;
     padding-top: 56px;
-    padding-bottom: 65px;
+    padding-bottom: 59px;
 }
 
 .portfolio__title {
@@ -84,6 +84,100 @@ a {
     display: none;
 }
 
-section.portfolio:after {
-    background-color: #323746;
+
+.about-us {
+    background-color: #f2f2f2;
+}
+
+.about-us__title {
+    font-family: 'latoblack';
+    font-size: 30px;
+    color: #666d89;
+    letter-spacing: -0.01em;
+}
+
+.about-us .wrapper {
+    padding-top: 55px;
+    padding-bottom: 20px;
+}
+
+.about-us__text {
+    padding-top: 15px;
+    font-family: 'latolight';
+    font-size: 18px;
+    color: #767e9e;
+    line-height: 1.65em;
+    text-align: justify;
+    letter-spacing: -0.21px;
+}
+
+.about_us__main {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 46px 0;
+}
+
+.about-us__item {
+    max-width: 300px;
+}
+
+.about-us__photo {
+    width: 100%;
+    /* padding-bottom: 100%; */
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.about-us__description {
+    padding-top: 12px;
+}
+
+.about-us__description h3 {
+    font-family: 'latoblack';
+    font-size: 18px;
+    /* letter-spacing: -0.015em; */
+    color: #666d89;
+    line-height: 1.2em;
+    height: 1.2em;
+    overflow: hidden;
+}
+
+.about-us__description p {
+    text-align: justify;
+    font-family: 'latoregular';
+    font-size: 12px;
+    line-height: 1.8em;
+    color: #767e9e;
+    padding-top: 8px;
+    letter-spacing: -0.005em;
+}
+
+.about-us__social {
+    padding-top: 24px;
+    display: flex;
+}
+
+.about-us__social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #767e9e;
+    border-radius: 50%;
+    padding: 7px;
+    margin-right: 9px;
+}
+
+.about-us__social a svg {
+    width: 15px;
+    height: 15px;
+    color: #767e9e;
+}
+
+.about-us__social a svg path {
+    fill: #767e9e;;
+}
+
+.about-us__social a:hover  {
+    opacity: 0.6;
 }
