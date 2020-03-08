@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1020px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+textarea {
+    resize: none;
+}
+
+.quote {
+    background  : #f06c64;
+    padding-top: 55px;
+    padding-bottom: 23px;
+    border-bottom: 5px solid #ea676b;
+}
+
+.quote__title {
+    font-family: 'latoblack';
+    font-size: 30px;
+    letter-spacing: -0.01em;
+    color: #f0d8d9;
+}
+
+.quote__description {
+    padding-top: 15px;
+    font-family: 'latolight';
+    font-size: 18px;
+    color: #f0d8d9;
+    line-height: 1.65em;
+    text-align: justify;
+    letter-spacing: -0.011em;
+}
+
+.quote__main {
+    padding-top: 28px;
+    display: flex;
+}
+
+form.quote__item {
+    width: 66%;
+    padding-top: 3px;
+}
+
+input, textarea {
+    background: #d6564f;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    color: #f0d8d9;
+    font-size: 12px;
+    font-family: 'latoregular';
+    outline: none;
+    padding-left: 14px;
+}
+
+
+
+.quote form input {
+    height: 38px;
+    margin-top: 15px;
+}
+
+.quote form input:focus:invalid {
+    border: 1px solid #B22222;
+    color: #B22222;
+}
+
+form textarea {
+    margin-top: 17px;
+    height: 202px;
+    padding-top: 11px;
+}
+
+::placeholder {
+    color: #f48c8f;
+    font-size: 12px;
+    font-family: 'latoregular';
+}
+
+.submit-button {
+    display: block;
+    background: #d6564f;
+    color: #f0d8d9;
+    font-size: 12px;
+    font-family: 'latoregular';
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+    margin: 10px auto 5px;
+}
+
+.submit-button:hover {
+    opacity: .6;
+}
+
+.contacts h3 {
+    font-family: 'latoblack';
+    font-size: 18px;
+    letter-spacing: -0.00007em;
+    color: #f0d8d9;
+    
+}
+
+.contacts {
+    width: 34%;
+    padding-left: 20px;
+    margin-top: 13px;
+    
+}
+
+
+.contacts p {
+    text-align: justify;
+    font-family: 'latoregular';
+    font-size: 12px;
+    line-height: 1.844em;
+    color: #f0d8d9;
+    letter-spacing: -0.005em;
+}
+
+.contacts p {
+    padding-top: 5px;   
+}
+
+.contacts ul {
+    padding-top: 22px;   
+}
+
+.contacts ul li:first-of-type a {
+    padding: 0 2px;
+}
+
+.contacts ul .quote__text {
+    padding-left: 10px;
+    letter-spacing: 0.006em;
+    font-family: 'latoregular';
+    line-height: 1.8em;
+    font-size: 12px;
+    color: #f0d8d9;
+}
